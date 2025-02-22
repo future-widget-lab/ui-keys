@@ -1,6 +1,7 @@
 {
-  "name": "create-ui-key",
+  "name": "@future-widget-lab/ui-keys",
   "version": "0.1.0",
+  "description": "A helper for creating render-friendly keys, useful for uniquely identifying resources, caching, testing, and rendering.",
   "license": "MIT",
   "author": "Carlos Lobo",
   "main": "dist/index.js",
@@ -10,6 +11,10 @@
     "dist",
     "src"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/future-widget-lab/ui-keys.git"
+  },
   "scripts": {
     "analyze": "size-limit --why",
     "build": "dts build",
@@ -48,5 +53,38 @@
       "path": "dist/create-ui-key.esm.js",
       "limit": "10 KB"
     }
+  ],
+  "dependencies": {
+    "change-case": "5.4.4",
+    "flatted": "^3.3.2"
+  },
+  "devDependencies": {
+    "@size-limit/preset-small-lib": "^11.1.6",
+    "@tsconfig/recommended": "^1.0.8",
+    "@tsconfig/vite-react": "^3.4.0",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "dts-cli": "^2.0.5",
+    "husky": "^9.1.7",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "size-limit": "^11.1.6",
+    "tslib": "^2.8.1",
+    "typescript": "^5.7.3"
+  },
+  "keywords": [
+    "ui-key",
+    "react-key",
+    "render-key",
+    "deterministic-key",
+    "unique-key",
+    "cache-key",
+    "testing-key",
+    "identifier",
+    "key-generator",
+    "flatted",
+    "object-key",
+    "data-key",
+    "serialization"
   ]
 }
